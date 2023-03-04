@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SubNavbarComponent } from './component/sub-navbar/sub-navbar.component';
+import { ConfigureDoorComponent } from './pages/configure-door/configure-door.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomePageComponent,
-    SubNavbarComponent
+    SubNavbarComponent,
+    ConfigureDoorComponent
   ],
   imports: [
     BrowserModule,
