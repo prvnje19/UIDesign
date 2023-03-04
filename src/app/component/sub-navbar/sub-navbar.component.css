@@ -1,0 +1,20 @@
+.sub-navbar{
+    background-color: #34495E;
+    height:48px;
+    display: flex;
+}
+.row{
+    width: 100%;
+}
+.content{
+    text-align: right;
+    color: white;
+}
+.content2{
+    text-align: left;
+    color: white;
+}
+
+.dashed{
+    border-bottom: 2px solid white;
+}
