@@ -1,0 +1,63 @@
+.table{
+    left: 1.11% !important;
+    right: 1.11% !important;
+    top: 23%;
+    bottom: -0.78%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+}
+.full{
+    background: #E5E5E5;
+}
+.thead{
+height: 15px;
+left: 2.22%;
+right: 87.43%;
+top: calc(50% - 15px/2 - 221.5px);
+
+font-family: 'HelveticaNeue';
+font-size: 12px;
+line-height: 14px;
+text-transform: uppercase;
+color: #8894A0;
+
+}
+.t-row{
+   
+font-size: 14px;
+line-height: 22px;
+
+color: #212931; 
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  
+}
+.feilds{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+.filter{
+box-sizing: border-box;
+
+
+background: #FFFFFF;
+
+border: 1px solid #E4E4E4;
+border-radius: 4px;
+}
+.carts{
+    font-family: 'HelveticaNeue';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+}
