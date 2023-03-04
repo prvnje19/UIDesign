@@ -1,0 +1,11 @@
+.container{
+    height: 80.4vh;
+}
+.sub-container{
+    height: 80.4vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+}
+.config-btn{
+    background-color: rgba(165, 42, 42, 0.897);
+    color: white;
+}
