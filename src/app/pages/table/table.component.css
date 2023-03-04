@@ -33,17 +33,21 @@ color: #212931;
 }
 
 .names{
+    position: absolute
+    ;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    padding: 5px;
+
   
 }
 .feilds{
     float: right;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-items: end;
+    align-self: flex-end;
+    position: relative;
 }
 .filter{
 box-sizing: border-box;
@@ -60,4 +64,16 @@ border-radius: 4px;
     line-height: 19px;
     text-align: center;
     text-transform: capitalize;
+}
+.input-group-append{
+    position: absolute;
+   
+}
+.srchbtn{
+    margin-left: 105px;
+    margin-top: 2px;
+    border: none !important;
+}
+.inpt{
+    width: 145px;
 }
