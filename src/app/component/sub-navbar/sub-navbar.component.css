@@ -14,3 +14,7 @@
     text-align: left;
     color: white;
 }
+
+.dashed{
+    border-bottom: 2px solid white;
+}
