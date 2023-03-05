@@ -8,6 +8,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TableComponent } from './pages/table/table.component';
 import { SubNavbarComponent } from './component/sub-navbar/sub-navbar.component';
 import { ConfigureDoorComponent } from './pages/configure-door/configure-door.component';
+import { FormsComponent } from './pages/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ConfigureDoorComponent } from './pages/configure-door/configure-door.co
     HomePageComponent,
     TableComponent,
     SubNavbarComponent,
-    ConfigureDoorComponent
+    ConfigureDoorComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
