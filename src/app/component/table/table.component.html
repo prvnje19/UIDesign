@@ -31,20 +31,22 @@
        
       </ul>
     </div>
-      <table class="table table-striped">
+      <table class="table table-striped bg-light mt-2">
     
       <thead>
           <tr>
-            <th class="thead" scope="col">Product information<i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <th class="thead mr-2" scope="col">
+              <span>Product information </span>
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i></span>
             </th>
-            <th class="thead" scope="col">Cart name<i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <th class="thead mr-2" scope="col">Cart name <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span>
             </th>
             <th class="thead" scope="col">Shipping point
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
             <th class="thead" scope="col">Created by
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
             <th class="thead" scope="col">Expiry
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
 
           </tr>
         </thead>
@@ -88,5 +90,5 @@
         </tbody>
     </table>
 <div class="addBtn">
-  <button class="add">+</button>
+  <button class="btn add" (click)="addItems()">+</button>
 </div>

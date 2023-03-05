@@ -1,0 +1,9 @@
+.parent-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-fluid{
+    background-color:#E5E5E5;
+}

@@ -9,7 +9,7 @@ color: #34495E;
     border-radius: 0px !important;
 padding: 16px;
 margin: 10px;
-width: 70%;
+/* width: 70%; */
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .parent-card{
@@ -61,4 +61,53 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 .btn-border{
     border: 1px solid #E4E4E4;
+}
+.card-bills{
+    height: 290px;
+}
+
+.billing{
+
+}
+
+.fDE-COLOR{
+    
+    color: #8894A0;
+}
+.con2{
+    display: flex;
+    justify-content: end;
+    
+}
+.addbtn{
+    border-color: #66332B;
+    background-color: white;
+}
+.btnn{
+    margin-right: 20px;
+    border-color: #66332B !important;
+
+}
+.plusBtn{
+    background-color: #66332B;
+    border-radius: 3px 4px;
+    font-size: 10px;
+    color: white;
+    margin-right: 4px;
+}
+.plcOrder{
+    background-color: #66332B !important;
+    color: white !important;
+}
+.buttons-align{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+.addbtn{
+    background-color: white;
+}
+.btn-brown-clr{
+    color:#66332B !important;
+    font-weight: 600;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-configure-door',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./configure-door.component.css']
 })
 export class ConfigureDoorComponent {
+  @Output() newItemEvent = new EventEmitter<any>();
+
+  constructor(){}
+
+  handleClick(){
+    this.newItemEvent.emit('placeOrder')
+    console.log("click");
+    
+  }
 
 }

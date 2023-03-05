@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sub-navbar',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./sub-navbar.component.css']
 })
 export class SubNavbarComponent {
+  @Input() compName:any;
 
 }
