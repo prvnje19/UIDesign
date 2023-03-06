@@ -1,6 +1,6 @@
 
   
-
+<!-- 
     <div class="navbar-container">
       <ul class="ulist">
     <div class="list1">
@@ -23,7 +23,8 @@
       </li>
 
       <li class="nav-link">
-      <button class="filterBtn" >Filter</button>
+      <button class="filterBtn" >  Filter</button>
+      <i class="fa-solid fa-bars-filter"> Filter</i>
 
       </li>
     </div>
@@ -31,20 +32,22 @@
        
       </ul>
     </div>
-      <table class="table table-striped">
+      <table class="table table-striped bg-light mt-2">
     
       <thead>
           <tr>
-            <th class="thead" scope="col">Product information<i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <th class="thead mr-2" scope="col">
+              <span>Product information </span>
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i></span>
             </th>
-            <th class="thead" scope="col">Cart name<i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <th class="thead mr-2" scope="col">Cart name <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span>
             </th>
             <th class="thead" scope="col">Shipping point
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
             <th class="thead" scope="col">Created by
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
             <th class="thead" scope="col">Expiry
-              <i class="fa fa-arrow-down" aria-hidden="true"></i></th>
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
 
           </tr>
         </thead>
@@ -68,14 +71,15 @@
             <td class="tdata">Johnson_Classic14209123</td>
             <td class="tdata">Russia Plant</td>
             <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days</td>
+            <td class="col-color tdata">Expires in 6 days  <span class="new">new</span> </td>
           </tr>
           <tr class="t-row">
             <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
             <td class="tdata">Johnson_Classic14209123</td>
             <td class="tdata">Russia Plant</td>
             <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days</td>
+            <td class="col-color tdata">Expires in 6 days  <span class="new">new</span> </td>
+
           </tr>
           <tr class="t-row">
             <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
@@ -85,4 +89,19 @@
             <td class="col-color tdata">Expires in 6 days</td>
           </tr>
         </tbody>
-    </table>
+    </table> -->
+    <div class="row">
+      <div class="">
+          <div class="card">
+            
+          <p>Group Name <span>#Classic_Johnson1456</span></p>
+            
+          </div>
+
+         
+      </div>
+     
+  </div>
+<div class="addBtn">
+  <button class="btn add" (click)="addItems()">+</button>
+</div>
