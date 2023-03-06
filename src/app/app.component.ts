@@ -13,12 +13,12 @@ export class AppComponent implements  OnInit  {
   SubCompName="createneworder"
   constructor(){ }
   ngOnInit(): void {
-    console.log(this.compName , "compname");
-
   }
   addBook(pageName: string) {
     this.compName =  pageName ;
-    console.log('newBook', pageName);
+    if(pageName === "createneworder"){
+      this.SubCompName="createneworder"
+    }
   }
   config(pageName:string){
     this.SubCompName =  pageName ;

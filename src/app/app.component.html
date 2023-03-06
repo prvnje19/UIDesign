@@ -12,7 +12,7 @@
         <app-createneworder *ngIf="SubCompName === 'createneworder'" (newItemEvent) = " config($event)"></app-createneworder>
         <app-configure-door *ngIf="SubCompName === 'configPage'" (newItemEvent) = " config($event)" ></app-configure-door>
         <app-forms *ngIf="SubCompName === 'forms'" (newItemEvent) = " config($event)"></app-forms>
-        <app-place-order *ngIf="SubCompName === 'placeOrder'"></app-place-order>
+        <app-place-order *ngIf="SubCompName === 'placeOrder'" (newItemEvent) = " addBook($event)"></app-place-order>
         
       </div>
     </div>
