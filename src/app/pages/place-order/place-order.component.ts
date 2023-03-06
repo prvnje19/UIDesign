@@ -19,8 +19,6 @@ export class PlaceOrderComponent implements OnInit {
   constructor(private api:ServiceService){}
   ngOnInit(): void {
     this.getDetails();
-    console.log(this.addedData , "addedDataaddedData");
-    
   }
 
   getDetails(){
@@ -45,7 +43,7 @@ export class PlaceOrderComponent implements OnInit {
 
   handleDelete(id:any){
     this.newItemEvent.emit('formsDelete');
-    this.api.deleteData(this.Data.id).subscribe(res=>{
+    this.api.deleteData(this.Data?.id).subscribe(res=>{
     })
     
   }

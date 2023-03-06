@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 // import { TableComponent } from './component/table/table.component';
@@ -15,6 +14,7 @@ import { FormsComponent } from './pages/forms/forms.component';
 import { PlaceOrderComponent } from './pages/place-order/place-order.component';
 import { TableComponent } from './component/table/table.component';
 import { CreateneworderComponent } from './pages/createneworder/createneworder.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [

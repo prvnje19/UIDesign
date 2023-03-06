@@ -18,7 +18,6 @@ export class AppComponent implements  OnInit  {
   ngOnInit(): void {  
   }
   added(data:any){
-    console.log(data , "app");
     this.addedData = data
   }
   transferData(data:any){
@@ -41,6 +40,8 @@ export class AppComponent implements  OnInit  {
     }
   }
   config(pageName:string){
+    console.log(pageName , "page form page");
+    this.compName =  pageName ;
     this.SubCompName =  pageName ;
   }
   buttonlable(label:any){

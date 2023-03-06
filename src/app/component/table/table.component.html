@@ -2,14 +2,14 @@
 
     <div class="navbar-container">
       <ul class="ulist">
-    <div class="list1">
-      <li class="nav-link active-link">
-        <a href="">Active carts
-        </a>
+    <div class="list1 mt-2">
+      <li class="active-link" [ngClass]="{'borderBottom':showPage === 'table'}">
+        <div (click)="changePage()">Active carts
+        </div>
         <div class="underline"></div>
       </li>
-      <li class="nav-link">
-        <a href="#">Achived carts</a>
+      <li class="active-link ml-5" [ngClass]="{'borderBottom':showPage === 'noData'}" >
+        <div (click)="changePages()">Achived carts</div>
         <div class="underline"></div>
       </li>
     </div>
@@ -33,7 +33,7 @@
        
       </ul>
     </div>
-      <table class="table table-striped bg-light mt-2">
+      <table class="table table-striped bg-light mt-2" *ngIf="showPage === 'table'" >
     
       <thead>
           <tr>
@@ -62,6 +62,10 @@
           </tr>
         </tbody>
     </table>
+
+    <div *ngIf="showPage === 'noData'">
+      <p>NO DATA FOUND</p>
+    </div>
 </div>
 
 

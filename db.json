@@ -2,9 +2,9 @@
   "posts": [
     {
       "id": 1,
-      "glasstype": "doors fiber",
+      "glasstype": "Section(s) Glazed",
       "section": "WindCode W1",
-      "flaming": "fff"
+      "flaming": "CC"
     },
     {
       "id": 6,
@@ -13,100 +13,40 @@
       "flaming": "fff"
     },
     {
-      "id": 7,
-      "glasstype": "",
-      "section": "",
-      "flaming": ""
-    },
-    {
       "id": 8,
       "glasstype": "Section(s) Glazed",
       "section": "WindCode W1",
       "flaming": "CC"
     },
     {
-      "id": 9,
-      "glasstype": "",
-      "section": "",
-      "flaming": ""
-    },
-    {
-      "id": 10,
-      "glasstype": "doors fiber",
-      "section": "Win1",
-      "flaming": "fff"
-    },
-    {
-      "id": 11,
-      "glasstype": "Section(s) Glazed",
-      "section": "Win1",
-      "flaming": "CC"
-    },
-    {
-      "id": 12,
-      "glasstype": "doors fiber",
-      "section": "Win1",
-      "flaming": "CC"
-    },
-    {
-      "id": 13,
-      "glasstype": "Section(s) Glazed",
-      "section": "Win1",
-      "flaming": "fff"
-    },
-    {
-      "id": 14,
-      "glasstype": "doors fiber",
-      "section": "Win1",
-      "flaming": "fff"
-    },
-    {
-      "id": 15,
-      "glasstype": "Section(s) Glazed",
-      "section": "Win1",
-      "flaming": "fff"
-    },
-    {
-      "id": 16,
-      "glasstype": "doors fiber",
-      "section": "Win1",
-      "flaming": "fff"
-    },
-    {
-      "id": 17,
-      "glasstype": "doors fiber",
-      "section": "Win1",
-      "flaming": "CC"
-    },
-    {
       "id": 18,
       "glasstype": "doors fiber",
-      "section": "WindCode W1",
+      "section": "Win1",
       "flaming": "CC"
     },
     {
       "id": 19,
-      "glasstype": "doors fiber",
+      "glasstype": "Section(s) Glazed",
       "section": "WindCode W1",
-      "flaming": "fff"
+      "flaming": "CC"
     },
     {
       "id": 20,
-      "glasstype": "doors fiber",
+      "glasstype": "Section(s) Glazed",
       "section": "WindCode W1",
-      "flaming": "fff"
+      "flaming": "CC"
     },
     {
       "id": 21,
       "glasstype": "doors fiber",
-      "section": "WindCode W1",
+      "section": "Win1",
       "flaming": "fff"
     },
     {
       "id": 22,
-      "glasstype": "doors fiber",
-      "section": "WindCode W1",
-      "flaming": "fff"
+      "glasstype": "Section(s) Glazed",
+      "section": "Win1",
+      "flaming": "CC"
     },
     {
       "id": 23,

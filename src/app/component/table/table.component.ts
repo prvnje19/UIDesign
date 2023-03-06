@@ -15,7 +15,7 @@ export class TableComponent implements OnInit {
   @Output() btnlabel = new EventEmitter<any>();
   Data: any;
   searchText:any;
-
+  showPage="table"
   constructor(private api : ServiceService){}
 
 
@@ -23,11 +23,16 @@ export class TableComponent implements OnInit {
     this.getDetails()
   }
 
+  changePage(){
+      this.showPage = "table"
+  }
+  changePages(){
+    this.showPage = "noData"
+  }
 
   getDetails(){
     this.api.getData().subscribe(res=>{
      this.Data = res;
-     console.log(this.Data,'res1')
     })
   }
 

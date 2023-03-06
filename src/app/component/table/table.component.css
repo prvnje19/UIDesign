@@ -47,18 +47,11 @@ font-weight: bold;
 	transition: width 0.2s, background-color 0.5s;
 	margin: 0 auto;
 }
-
-.navbar-container ul li.active-link .underline {
-	width: 100%;
-	background-color: #34495E;
+.active-link{
+    margin-right: 20px;
 }
-
-.navbar-container ul li:hover .underline {
-	background-color: #34495E;
-	width: 100%;
-}
-
-.navbar-container ul li:hover a {
+.borderBottom{
+    border-bottom: 2px solid black;
 }
 
 .navbar-container ul li:active a {
