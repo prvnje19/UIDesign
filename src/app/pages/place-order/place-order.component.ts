@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ServiceService } from 'src/app/service/service.service';
 
 @Component({
@@ -8,10 +8,28 @@ import { ServiceService } from 'src/app/service/service.service';
 })
 export class PlaceOrderComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter<any>();
-  constructor(private service:ServiceService){}
+  @Output() buttonlable = new EventEmitter<any>();
+  @Input() Data:any;
+
+  Datas: any;
+  prodId:any
+  
+  constructor(private api:ServiceService){}
   ngOnInit(): void {
-    
+    this.getDetails();
+
+    this.Datas.map((res:any)=>{
+      this.prodId = res.id
+    })
   }
+
+  getDetails(){
+    this.api.getData().subscribe(res=>{
+     this.Datas = res;
+    })
+  }
+
+  
   addMore(){
     this.newItemEvent.emit('createneworder')
   }
@@ -20,4 +38,15 @@ export class PlaceOrderComponent implements OnInit {
     this.newItemEvent.emit('table')
   }
 
+  handleEdit(id:any){
+    this.newItemEvent.emit('formsEdit')
+    this.buttonlable.emit('Update')
+  }
+
+  handleDelete(id:any){
+    this.newItemEvent.emit('formsDelete');
+    this.api.deleteData(this.Data.id).subscribe(res=>{
+    })
+    
+  }
 }

@@ -10,16 +10,38 @@ import { ServiceService } from 'src/app/service/service.service';
 export class TableComponent implements OnInit {
 
   @Output() newItemEvent = new EventEmitter<any>();
-  table:any[]=[]
-  constructor(private route:Router,private api : ServiceService){}
+  @Output() DataEmmit = new EventEmitter<any>();
+  @Output() DataTransfer = new EventEmitter<any>();
+  @Output() btnlabel = new EventEmitter<any>();
+  Data: any;
+  searchText:any;
+
+  constructor(private api : ServiceService){}
 
 
   ngOnInit():void{
-  }
-  addItems(){
-    this.newItemEvent.emit('createneworder')
+    this.getDetails()
   }
 
+
+  getDetails(){
+    this.api.getData().subscribe(res=>{
+     this.Data = res;
+     console.log(this.Data,'res1')
+    })
+  }
+
+  addItems(){
+    this.newItemEvent.emit('createneworder')
+    
+    this.btnlabel.emit('ADD TO CART')
+
+  }
+
+  handleGet(data:any){
+    this.DataTransfer.emit(data)
+    this.DataEmmit.emit('placeOrder')
+  }
 
 
 }
