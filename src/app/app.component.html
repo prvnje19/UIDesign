@@ -1,12 +1,30 @@
 
 <div class="cont">
   <div class="navs">
+<<<<<<< HEAD
     <app-navbar></app-navbar>
     <app-sub-navbar></app-sub-navbar>
     <app-forms></app-forms>
+=======
+    <app-navbar    *ngIf="compName === 'table'"></app-navbar>
+    <app-sub-navbar [compName]="compName"></app-sub-navbar>
+>>>>>>> 3bc5ae0fa71115bf7584a48f3358da390107e8c0
   </div>
-  <div class="comp">
-    <router-outlet></router-outlet>
+  <div class="container-fluid" *ngIf="compName !== 'table'" >
+    <div class="row">
+      <div class="col-2  col-lg-2">
+      </div>
+      <div class="col-sm-12 col-xs-12 col-lg-8">
+        <app-configure-door *ngIf="SubCompName === 'configPage'" (newItemEvent) = " config($event)" ></app-configure-door>
+        <app-place-order *ngIf="SubCompName === 'placeOrder'"></app-place-order>
+      </div>
+    </div>
   </div>
-
+  <div class="container-fluid" *ngIf="compName === 'table'" >
+    <div class="row">
+      <div class="col-12">
+        <app-table (newItemEvent) = "addBook($event)"></app-table>
+      </div>
+    </div>
+  </div>
 </div>

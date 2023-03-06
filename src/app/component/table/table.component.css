@@ -77,7 +77,7 @@ font-weight: bold;
 }
 
 
-.fa-search{
+.search-icon{
     position: absolute;
     margin-top: -27px;
     margin-left: -31px;
@@ -102,6 +102,10 @@ font-weight: bold;
     margin-right: 12px;
 }
 
+.table thead tr th{
+    font-weight: 500 !important;
+}
+
 .table-striped{
     width: 98%;
     margin-left: 13px;
@@ -112,6 +116,7 @@ font-weight: bold;
 font-size: 12px;
 line-height: 14px;
 text-transform: uppercase;
+
 }
 .tdata{
     font-family: 'HelveticaNeue';
@@ -121,3 +126,78 @@ line-height: 16px;
 .col-color{
     color: #E67E22;
 }
+.new{
+	background: rgba(23, 168, 95, 0.2);
+border-radius: 50px;
+padding: 0px 9px 1px 9px;
+color: green;
+margin-left: 12px;
+
+}
+.addBtn{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	margin-right: 20px;
+}
+.add{
+    padding: 5px 19px;
+    background: #66332B;
+    color: #E5E5E5;
+    font-weight: bold;
+    border-radius: 45px;
+    font-size: 35px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 13%);
+    border: none !important;
+    text-align: center;
+}
+.arrow-icon{
+    font-weight: 300;
+    font-size: 11px;
+    font-weight: 100 !important;
+}
+
+.mob-grp-head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.mob-address{
+    
+}
+.mob-exp{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.gray-color{
+    color:#8894A0
+}
+.mobile-view{
+    display: none;
+}
+
+.mob-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.mob-btn-active{
+    background: #DDEDFD;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+border-radius: 3px 2px 2px 3px;
+padding: 7px 32px;
+}
+.mob-btn-achive{
+padding: 7px 32px;
+
+}
+@media only screen and (max-width: 977px) {
+    .mobile-view{
+        display:block ;
+    }
+    .web-view{
+        display: none;
+    }
+  }
+  

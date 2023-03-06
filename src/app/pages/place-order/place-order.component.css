@@ -1,0 +1,113 @@
+.sub-header{
+    font-family: 'Helvetica Neue';
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #34495E;
+}
+.card{
+    border-radius: 0px !important;
+padding: 16px;
+margin: 10px;
+/* width: 70%; */
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.parent-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.fade-text{
+    color: #8894A0;
+    font-size: 14px;
+}
+.normal-text{
+    color: black;
+    font-size: 14px;
+}
+.green-text{
+    color: #17A85F;
+    font-size: 14px;
+    font-weight:600
+}
+.qty-input{
+    width: 50px !important;
+    text-align: center;
+}
+.col-space{
+    column-gap: 8px;
+}
+.qty{
+    margin-right: 8px;
+}
+.btns{
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+.text-center{
+    text-align: center;
+    color: #17A85F;
+    font-size: 16px;
+    font-weight: 400;
+}
+.mpq-txt{
+    color: #66332B !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+.text-right{
+    text-align: right;
+}
+
+.btn-border{
+    border: 1px solid #E4E4E4;
+}
+.card-bills{
+    height: 290px;
+}
+
+.billing{
+
+}
+
+.fDE-COLOR{
+    
+    color: #8894A0;
+}
+.con2{
+    display: flex;
+    justify-content: end;
+    
+}
+.addbtn{
+    border-color: #66332B;
+    background-color: white;
+}
+.btnn{
+    margin-right: 20px;
+    border-color: #66332B !important;
+
+}
+.plusBtn{
+    background-color: #66332B;
+    border-radius: 3px 4px;
+    font-size: 10px;
+    color: white;
+    margin-right: 4px;
+}
+.plcOrder{
+    background-color: #66332B !important;
+    color: white !important;
+}
+.buttons-align{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+.addbtn{
+    background-color: white;
+}
+.btn-brown-clr{
+    color:#66332B !important;
+    font-weight: 600;
+}
