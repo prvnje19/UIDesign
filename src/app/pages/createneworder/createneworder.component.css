@@ -1,0 +1,18 @@
+.card{
+    height: 96px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title{
+    font-size: 19px;
+}
+
+.card-text{
+    color: #8894A0;
+    font-size: 14px;
+
+}
+.fa {
+    color: #66332B;
+  }
