@@ -13,9 +13,7 @@ export class TableComponent {
   constructor(private route:Router){}
 
   addItems(){
-    this.newItemEvent.emit('configPage')
-    console.log("click");
-    
+    this.newItemEvent.emit('createneworder')
   }
 
 

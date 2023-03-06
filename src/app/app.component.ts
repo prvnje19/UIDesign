@@ -10,7 +10,7 @@ export class AppComponent implements  OnInit  {
   title = 'uiDesign';
   routeName:any;
   compName = "table"
-  SubCompName="configPage"
+  SubCompName="createneworder"
   constructor(){ }
   ngOnInit(): void {
     console.log(this.compName , "compname");

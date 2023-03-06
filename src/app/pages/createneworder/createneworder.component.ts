@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-createneworder',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class CreateneworderComponent {
 
+  @Output() newItemEvent = new EventEmitter<any>();
+
+  constructor(private route:Router){}
+
+  addItems(){
+    this.newItemEvent.emit('configPage')
+  }
 }

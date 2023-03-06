@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forms',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent {
+
+  @Output() newItemEvent = new EventEmitter<any>();
+
+  constructor(private route:Router){}
+
+  handleChange(){
+    this.newItemEvent.emit('placeOrder')
+  }
+  
 
 }
