@@ -52,42 +52,13 @@
 
           </tr>
         </thead>
-        <tbody *ngFor="let data of table">
-          <tr class="t-row">
-            <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
-            <td class="tdata">Johnson_Classic14209123</td>
-            <td class="tdata">Russia Plant</td>
-            <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days</td>
-          </tr>
-          <tr class="t-row">
-            <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
-            <td class="tdata">Johnson_Classic14209123</td>
-            <td class="tdata">Russia Plant</td>
-            <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days</td>
-          </tr>
-          <tr class="t-row">
-            <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
-            <td class="tdata">Johnson_Classic14209123</td>
-            <td class="tdata">Russia Plant</td>
-            <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days  <span class="new">new</span> </td>
-          </tr>
-          <tr class="t-row">
-            <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
-            <td class="tdata">Johnson_Classic14209123</td>
-            <td class="tdata">Russia Plant</td>
-            <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days  <span class="new">new</span> </td>
-
-          </tr>
-          <tr class="t-row">
-            <td class="tdata">2 Classic Collection Garage Door, 2 Entry Door</td>
-            <td class="tdata">Johnson_Classic14209123</td>
-            <td class="tdata">Russia Plant</td>
-            <td class="tdata">Manoj Bajpayee</td>
-            <td class="col-color tdata">Expires in 6 days</td>
+        <tbody >
+          <tr class="t-row" (click)="handleGet(data)" *ngFor="let data of Data"   >
+            <td class="tdata">{{data.glasstype}}</td>
+            <td class="tdata">{{data.section}}</td>
+            <td class="tdata">{{data.flaming}}</td>
+            <td class="tdata">{{data.glasstype}}</td>
+            <td class="col-color tdata">{{data.glasstype}}</td>
           </tr>
         </tbody>
     </table>
@@ -112,13 +83,13 @@
       </div>
       <div class="row mt-2">
         <div class="">
-            <div class="card p-2">
+            <div class="card p-2" *ngFor="let data of Data">
               <div class="mob-grp-head">
                 <p>Group Name <b>#Classic_Johnson1456</b></p>
                 <b>#42521983</b>
               </div>
               <div class="mob-address mt-2">
-                <h6>2 Classic Collection Garage Door, 2 Entry Door</h6>
+                <h6>{{data.glasstype}}</h6>
               </div>
               <div class="mob-exp">
                 <p class="gray-color">Expires in 90 days · Created by John</p>
@@ -131,48 +102,6 @@
         </div>
        
     </div>
-    <div class="row mt-2">
-      <div class="">
-          <div class="card p-2">
-            <div class="mob-grp-head">
-              <p>Group Name <b>#Classic_Johnson1456</b></p>
-              <b>#42521983</b>
-            </div>
-            <div class="mob-address mt-2">
-              <h6>2 Classic Collection Garage Door, 2 Entry Door</h6>
-            </div>
-            <div class="mob-exp">
-              <p class="gray-color"> <span style="color: rgb(255, 196, 0);">Expires in 90 days</span>  · Created by John</p>
-              <p class="new">new</p>
-            </div>
-            
-          </div>
-  
-         
-      </div>
-     
-  </div>
-  <div class="row mt-2">
-    <div class="">
-        <div class="card p-2">
-          <div class="mob-grp-head">
-            <p>Group Name <b>#Classic_Johnson1456</b></p>
-            <b>#42521983</b>
-          </div>
-          <div class="mob-address mt-2">
-            <h6>2 Classic Collection Garage Door, 2 Entry Door</h6>
-          </div>
-          <div class="mob-exp">
-            <p class="gray-color">Expires in 90 days · Created by John</p>
-            <p class="new">new</p>
-          </div>
-          
-        </div>
-  
-       
-    </div>
-   
-  </div>
     </div>
   
 <div class="addBtn">

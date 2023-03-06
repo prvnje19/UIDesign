@@ -16,6 +16,7 @@
                             <button class="btns px-2">+</button>
                          </span>
                         </div>
+                        <!-- <div> -->
                         <div class="col-4  text-center">
                             <p>Standard Multiplier: .432 <br/>
                                 Secondary Multipliers Applied</p>
@@ -32,14 +33,14 @@
                     <div class="col-3 btn-border">
                         <button class="btn btn-brown-clr  w-100">FAVORITES</button>
                     </div>
-                    <div class="col-3 btn-border">
-                        <button class="btn btn-brown-clr  w-100">EDIT</button>
+                    <div class="col-3 btn-border" >
+                        <button class="btn btn-brown-clr  w-100" (click)="handleEdit($event)" >EDIT</button>
                     </div>
                     <div class="col-3 btn-border">
                         <button class="btn btn-brown-clr  w-100">COPY</button>
                     </div>
                     <div class="col-3 btn-border">
-                        <button class="btn btn-brown-clr  w-100">DELETE</button>
+                        <button class="btn btn-brown-clr  w-100" (click)="handleDelete($event)">DELETE</button>
                     </div>
                 </div>
             </div>
