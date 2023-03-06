@@ -11,7 +11,7 @@ export class ConfigureDoorComponent {
   constructor(){}
 
   handleClick(){
-    this.newItemEvent.emit('placeOrder')
+    this.newItemEvent.emit('forms')
     console.log("click");
     
   }

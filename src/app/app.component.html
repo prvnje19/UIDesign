@@ -11,6 +11,7 @@
       <div class="col-sm-12 col-xs-12 col-lg-8">
         <app-configure-door *ngIf="SubCompName === 'configPage'" (newItemEvent) = " config($event)" ></app-configure-door>
         <app-place-order *ngIf="SubCompName === 'placeOrder'"></app-place-order>
+        <app-forms *ngIf="SubCompName === 'forms'"></app-forms>
       </div>
     </div>
   </div>
