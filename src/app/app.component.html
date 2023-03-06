@@ -9,8 +9,11 @@
       <div class="col-2  col-lg-2">
       </div>
       <div class="col-sm-12 col-xs-12 col-lg-8">
+        <app-createneworder *ngIf="SubCompName === 'createneworder'" (newItemEvent) = " config($event)"></app-createneworder>
         <app-configure-door *ngIf="SubCompName === 'configPage'" (newItemEvent) = " config($event)" ></app-configure-door>
+        <app-forms *ngIf="SubCompName === 'forms'" (newItemEvent) = " config($event)"></app-forms>
         <app-place-order *ngIf="SubCompName === 'placeOrder'"></app-place-order>
+        
       </div>
     </div>
   </div>
