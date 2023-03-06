@@ -12,6 +12,8 @@ import { dataModelObj } from './dataModelObj';
 export class FormsComponent implements OnInit  {
 
   @Output() newItemEvent = new EventEmitter<any>();
+  @Output() DataTransfer = new EventEmitter<any>();
+
   @Input() Data:any;
   @Input() btnlabel:any;
   
@@ -26,6 +28,8 @@ export class FormsComponent implements OnInit  {
       flaming: [''],
     });
     this.onedit();
+    console.log(this.Data , "Data formsss");
+    
   }
   
 
@@ -36,6 +40,13 @@ export class FormsComponent implements OnInit  {
     this.dataModelObj.flaming=this.addDetails.value.flaming;
     this.api.addData(this.dataModelObj).subscribe((res:any)=>{
        console.log(res,'res1')
+       const data = []
+       data.push(res)
+       console.log(data[0] , "data oinsideee");
+       
+       this.DataTransfer.emit(data[0])
+
+       
     })
   }
   onedit(){
