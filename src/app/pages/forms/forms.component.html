@@ -1,5 +1,11 @@
+<div class="progress mt-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" [class]="progress === 100 ? 'bg-success' : 'bg-primary'" [style.width.%]="progress"></div>
+</div>
+
+<p>{{count}}% Completed</p>
 <!-- card1 -->
-<div class="container-fluid" style="padding-top: 40px">
+
+<div class="container-fluid" style="padding-top: 30px" [formGroup]="form">
   <div class="row d-flex justify-content-center mt-5">
     <div class="col-lg-12 col-sm-10 col-xs-11">
       <div class="card">
@@ -20,8 +26,8 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>Complete Door</option>
-                <option selected>Complete Door</option>
+                <option >Complete Door</option>
+                <option >Complete Door</option>
               </select>
             </div>
           </div>
@@ -38,7 +44,7 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>6ft</option>
+                    <option >6ft</option>
                     <option value="1">7ft</option>
                   </select>
                 </div>
@@ -47,7 +53,7 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>2in</option>
+                    <option >2in</option>
                     <option value="1">3in</option>
                   </select>
                 </div>
@@ -59,7 +65,7 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>6ft</option>
+                    <option >6ft</option>
                     <option value="1">7ft</option>
                   </select>
                 </div>
@@ -68,7 +74,7 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>0in</option>
+                    <option >0in</option>
                     <option value="1">3in</option>
                   </select>
                 </div>
@@ -85,7 +91,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>WindCode W1</option>
+                <option >WindCode W1</option>
               </select>
             </div>
           </div>
@@ -99,7 +105,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>CC</option>
+                <option >CC</option>
               </select>
             </div>
           </div>
@@ -112,8 +118,9 @@
                 <select
                 class="form-select"
                 aria-label="Default select example"
+                formControlName="Color"
               >
-                <option selected>Dark Finish</option>
+                <option >Dark Finish</option>
               </select>
             </div>
           </div>
@@ -130,7 +137,7 @@
       <div class="card">
         <div class="card-header cd">Window Options</div>
         <div class="card-body">
-          <form [formGroup]="addDetails">
+          <form >
           <div class="row mb-3">
             <div class="col-lg-4 col-sm-4" id="sec">
               <p class="para">Glass Type</p>
@@ -138,7 +145,6 @@
             <div class="col-lg-8 col-sm-8">
               <!-- <input type="text"  formControlName="glasstype" placeholder="Enter your username" required> -->
                 <select
-                formControlName="glasstype"
                 class="form-select"
                 aria-label="Default select example"
               >
@@ -154,11 +160,10 @@
             <div class="col-lg-8 col-sm-8">
               <!-- <input type="text"  formControlName="section" placeholder="Enter your username" required> -->
                 <select
-                formControlName="section"
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>WindCode W1</option>
+                <option >WindCode W1</option>
               </select>
             </div>
           </div>
@@ -170,11 +175,11 @@
             <div class="col-lg-8 col-sm-8">
               <!-- <input type="text"  formControlName="flaming" placeholder="Enter your username" required> -->
                 <select
-                formControlName="flaming"
+                formControlName="Flaming"
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>CC</option>
+                <option >CC</option>
               </select>
             </div>
           </div>
@@ -201,7 +206,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>Complete Door</option>
+                <option >Complete Door</option>
               </select>
             </div>
           </div>
@@ -229,7 +234,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>CC</option>
+                <option >CC</option>
               </select>
             </div>
           </div>
@@ -243,7 +248,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>Dark Finish</option>
+                <option >Dark Finish</option>
               </select>
             </div>
           </div>
@@ -257,7 +262,7 @@
                 class="form-select"
                 aria-label="Default select example"
               >
-                <option selected>Dark Finish</option>
+                <option >Dark Finish</option>
               </select>
             </div>
           </div>
@@ -271,8 +276,9 @@
                 <select
                 class="form-select"
                 aria-label="Default select example"
+                formControlName="ColorLay"
               >
-                <option selected>Dark Finish</option>
+                <option >Dark Finish</option>
               </select>
             </div>
           </div>
@@ -403,7 +409,7 @@
                     </label>
                   </div>
                   <div class="form-check" id="che">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="Additional" >
                     <label class="form-check-label" for="flexCheckChecked">
                         2 Spear Lift Handles
                     </label>
