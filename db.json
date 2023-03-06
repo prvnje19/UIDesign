@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "glasstype": "Section(s) Glazed",
+      "section": "WindCode W1",
+      "flaming": "CC"
+    },
+    {
+      "id": 6,
+      "glasstype": "doors fiber",
+      "section": "WindCode W1",
+      "flaming": "fff"
+    },
+    {
+      "id": 8,
+      "glasstype": "Section(s) Glazed",
+      "section": "WindCode W1",
+      "flaming": "CC"
+    },
+    {
+      "id": 18,
+      "glasstype": "doors fiber",
+      "section": "Win1",
+      "flaming": "CC"
+    },
+    {
+      "id": 19,
+      "glasstype": "Section(s) Glazed",
+      "section": "WindCode W1",
+      "flaming": "CC"
+    },
+    {
+      "id": 20,
+      "glasstype": "Section(s) Glazed",
+      "section": "WindCode W1",
+      "flaming": "CC"
+    },
+    {
+      "id": 21,
+      "glasstype": "doors fiber",
+      "section": "Win1",
+      "flaming": "fff"
+    },
+    {
+      "id": 22,
+      "glasstype": "Section(s) Glazed",
+      "section": "Win1",
+      "flaming": "CC"
+    },
+    {
+      "id": 23,
+      "glasstype": "doors fiber",
+      "section": "WindCode W1",
+      "flaming": "CC"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

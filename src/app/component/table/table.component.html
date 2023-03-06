@@ -1,0 +1,123 @@
+<div class="web-view">
+
+    <div class="navbar-container">
+      <ul class="ulist">
+    <div class="list1 mt-2">
+      <li class="active-link" [ngClass]="{'borderBottom':showPage === 'table'}">
+        <div (click)="changePage()">Active carts
+        </div>
+        <div class="underline"></div>
+      </li>
+      <li class="active-link ml-5" [ngClass]="{'borderBottom':showPage === 'noData'}" >
+        <div (click)="changePages()">Achived carts</div>
+        <div class="underline"></div>
+      </li>
+    </div>
+    <div class="list2">
+      <li class="form">
+        <div class="form-group ">
+          <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching ">
+          <i class="fa fa-search search-icon"></i>
+        </div> 
+      </li>
+
+      <li class="nav-link">
+      <button class="filterBtn" >Filter <span>  
+      <img src="./../../../assets/bars-filter-svgrepo-com.png" width="25" alt="">
+      </span></button>
+
+
+      </li>
+    </div>
+       
+       
+      </ul>
+    </div>
+      <table class="table table-striped bg-light mt-2" *ngIf="showPage === 'table'" >
+    
+      <thead>
+          <tr>
+            <th class="thead mr-2" scope="col">
+              <span>Product information </span>
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i></span>
+            </th>
+            <th class="thead mr-2" scope="col">Cart name <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span>
+            </th>
+            <th class="thead" scope="col">Shipping point
+              <span class="icons ml-2"><i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
+            <th class="thead" scope="col">Created by
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
+            <th class="thead" scope="col">Expiry
+              <span class="icons ml-2"> <i class="fa fa-arrow-down arrow-icon" aria-hidden="true"></i> </span></th>
+
+          </tr>
+        </thead>
+        <tbody >
+          <tr class="t-row" (click)="handleGet(data)" *ngFor="let data of Data | filter:searchText"   >
+            <td class="tdata">{{data.glasstype}}</td>
+            <td class="tdata">{{data.section}}</td>
+            <td class="tdata">{{data.flaming}}</td>
+            <td class="tdata">{{data.glasstype}}</td>
+            <td class="col-color tdata">{{data.glasstype}}</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <div *ngIf="showPage === 'noData'">
+      <p>NO DATA FOUND</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+
+    <div class="mobile-view">
+      <div class="mob-nav my-4">
+        <div class="col1">
+       <h5>Carts</h5>
+        </div>
+        
+        <div class="col2">
+        <button class="mob-btn-active" >Active</button>
+        <button class="mob-btn-achive">Achived</button>
+        </div>
+        <div class="col3">
+          <i class="fa fa-search"></i>
+          <img src="./../../../assets/bars-filter-svgrepo-com.png" width="30" alt="">
+
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="">
+            <div class="card p-2" *ngFor="let data of Data">
+              <div class="mob-grp-head">
+                <p>Group Name <b>#Classic_Johnson1456</b></p>
+                <b>#42521983</b>
+              </div>
+              <div class="mob-address mt-2">
+                <h6>{{data.glasstype}}</h6>
+              </div>
+              <div class="mob-exp">
+                <p class="gray-color">Expires in 90 days · Created by John</p>
+                <p class="new">new</p>
+              </div>
+              
+            </div>
+  
+           
+        </div>
+       
+    </div>
+    </div>
+  
+<div class="addBtn">
+  <button class="btn add" (click)="addItems()">+</button>
+</div>

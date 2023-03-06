@@ -1,0 +1,216 @@
+<div class="container">
+    <div class="row">
+        <div class="">
+            <div class="card">
+                <div class="row">
+                <h3 class="sub-header">{{Data?.glasstype}}</h3>
+                <span class="fade-text">Job Name: Front door with glass <span class="normal-text">Change</span></span>      
+                <span class="fade-text">Product #CWD •  Garage Door</span>
+                <span class="fade-text">Availability: <span class="green-text">IN STOCK</span>  <span class="normal-text"> (Available for Pickup)</span></span>
+            </div>
+                <div class="row  mt-4">
+                        <div class="col-4">
+                         <span class="qty">
+                            <button class="btns px-2"> -</button>
+                         </span>  <span class="qty" ><input class="qty-input" type="text" value="1" /> </span>  <span class="qty">
+                            <button class="btns px-2">+</button>
+                         </span>
+                        </div>
+                        <!-- <div> -->
+                        <div class="col-4  text-center">
+                            <p>Standard Multiplier: .432 <br/>
+                                Secondary Multipliers Applied</p>
+                                <div class=" mpq-txt">
+                                    <span>Apply MPQ</span>
+                                </div>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p>Net Price: $4500.00 <br>
+                                Unit Price: $4800.00</p>
+                        </div>
+                </div>
+                <div class="row px-3 mt-3">
+                    <div class="col-3 btn-border">
+                        <button class="btn btn-brown-clr  w-100">FAVORITES</button>
+                    </div>
+                    <div class="col-3 btn-border" >
+                        <button class="btn btn-brown-clr  w-100" (click)="handleEdit($event)" >EDIT</button>
+                    </div>
+                    <div class="col-3 btn-border">
+                        <button class="btn btn-brown-clr  w-100">COPY</button>
+                    </div>
+                    <div class="col-3 btn-border">
+                        <button class="btn btn-brown-clr  w-100" (click)="handleDelete($event)">DELETE</button>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+       
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <p>Change Delivery Date</p>
+                                <div class="my-2">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                               <p>Standard Delivery: Tue May 28 - 2019</p>
+                             </div>
+                 
+                        </div>
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <p>Purchase Order Number</p>
+                                <div class="my-2">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                               <p>This PO will be useful to track this order items </p>
+                             </div>
+                 
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12">
+                    <div class="card card-bills">
+                        <p>Bill Summary</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Sub Total</p>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p>$ 4500.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Energy Surcharge</p>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p>$ 70.18</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Sales Tax</p>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p>$ 490.93</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <b>Total</b>
+                            </div>
+                            <div class="col-6 text-right">
+                                <b>$ 5061.11</b>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <span><input type="checkbox" /> <span>
+                               <b> Apply Tax</b>
+                            </span></span> 
+                        </div>
+                        <div class="row mt-2">
+                            <p class="fade-text">
+                                (The 1% iStore discount is calculated into the total price for all doors and door parts. Please refer to the quote or order acknowledgment for details.)
+                            </p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+           
+           
+        </div>
+       
+       
+    </div>
+
+
+
+<!-- footer -->
+
+    <div class="row">
+        <div class="">
+            <div class="card">
+               <div class="row">
+                <div class="col-6 billing">
+                   <div class="row">
+                    <div class="col-lg-9">
+                        <p class="fDE-COLOR" >Billing to</p>
+                        <p>Bement Jared</p>
+                    <p>144 Curt Shores, 50, Madison Avenue <br>
+                        Hixson - 42040 </p>
+                        <p>Contact: (123) 456 7890</p>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center">
+                        <button class="btn">change</button>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <p class="fDE-COLOR">Shipping To</p>
+                    <p>Bement Jared</p>
+                    <p>144 Curt Shores, 50, Madison Avenue <br>
+                        Hixson - 42040</p>
+                        <p>Contact: (123) 456 7890</p>
+                        </div>
+                        <div class="col-lg-2 d-flex align-items-center">
+                            <button class="btn">change</button>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              
+            </div>
+
+           
+        </div>
+       
+    </div>
+
+    <!--  -->
+
+    <div class="row">
+        <div class="">
+            <div class="card">
+              <div class="row">
+                    <div class="col-6 con1">
+                    <p>1 Item</p>
+                    <h6>$5061.11</h6>
+                    </div>
+                    <div class=" col-6 buttons-align">
+                        
+<div class="con2">
+    <button type="button" class="btn  btnn d-flex justify-content-center"> 
+        <span class="plusBtn pb-1 px-1 mt-1 ">+</span> 
+        <span class="ml-4" (click)="addMore()" > ADD MORE</span> </button>
+
+    <button type="button" class="btn btn-secondary plcOrder" (click)="handleOrder()" >Place order</button></div>
+
+                    </div>
+                
+              </div>
+              
+            </div>
+
+           
+        </div>
+       
+    </div>
+   
+</div>

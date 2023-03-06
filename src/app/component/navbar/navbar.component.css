@@ -1,0 +1,35 @@
+.navbar{
+    background-color: black;
+}
+.navbar-brand{
+    color: white !important;
+   
+}
+.nav-item a{
+    color: white;
+}
+.navbar-text{
+    color: white;
+}
+button .navbar-toggler-icon{
+    color: white;
+}
+.logo{
+    border-radius: 50%;
+    background-color: hotpink;
+    color: white;
+    margin-right: 7px !important;
+}
+.icons{
+    margin-right: 24px;
+}
+.profilepic{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.dotted{
+    /* font-size:40px; */
+    font-weight: 700;
+    color: red;
+}
