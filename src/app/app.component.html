@@ -11,8 +11,8 @@
       <div class="col-sm-12 col-xs-12 col-lg-8">
         <app-createneworder *ngIf="SubCompName === 'createneworder'" (newItemEvent) = " config($event)"></app-createneworder>
         <app-configure-door *ngIf="SubCompName === 'configPage'" (newItemEvent) = " config($event)" ></app-configure-door>
-        <app-forms *ngIf="SubCompName === 'forms'" [btnlabel]="btnlabel" (newItemEvent) = " config($event)" [Data] = "Data"  ></app-forms>
-        <app-place-order *ngIf="SubCompName === 'placeOrder'" (buttonlable)="buttonlable($event)" [Data] = "Data"  (newItemEvent) = " addBook($event)"></app-place-order>
+        <app-forms *ngIf="SubCompName === 'forms'"  (DataTransfer)="added($event)" [btnlabel]="btnlabel" (newItemEvent) = " config($event)" [Data] = "Data"  ></app-forms>
+        <app-place-order *ngIf="SubCompName === 'placeOrder'" [addedData] = "addedData" (buttonlable)="buttonlable($event)" [Data] = "Data"  (newItemEvent) = " addBook($event)"></app-place-order>
         
       </div>
     </div>

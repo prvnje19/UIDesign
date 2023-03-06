@@ -16,7 +16,7 @@
     <div class="list2">
       <li class="form">
         <div class="form-group ">
-          <input class="form-control input-sm " id="inputsm" type="text" placeholder="search">
+          <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching ">
           <i class="fa fa-search search-icon"></i>
         </div> 
       </li>
@@ -53,7 +53,7 @@
           </tr>
         </thead>
         <tbody >
-          <tr class="t-row" (click)="handleGet(data)" *ngFor="let data of Data"   >
+          <tr class="t-row" (click)="handleGet(data)" *ngFor="let data of Data | filter:searchText"   >
             <td class="tdata">{{data.glasstype}}</td>
             <td class="tdata">{{data.section}}</td>
             <td class="tdata">{{data.flaming}}</td>
@@ -63,6 +63,16 @@
         </tbody>
     </table>
 </div>
+
+
+
+
+
+
+
+
+
+
   
 
     <div class="mobile-view">

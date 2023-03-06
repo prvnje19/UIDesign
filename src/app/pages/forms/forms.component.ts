@@ -12,6 +12,8 @@ import { dataModelObj } from './dataModelObj';
 export class FormsComponent implements OnInit  {
 
   @Output() newItemEvent = new EventEmitter<any>();
+  @Output() DataTransfer = new EventEmitter<any>();
+
   @Input() Data:any;
   @Input() btnlabel:any;
   
@@ -26,7 +28,6 @@ export class FormsComponent implements OnInit  {
       flaming: [''],
     });
     this.onedit();
-    localStorage.setItem('page' , 'forms')
   }
   
 
@@ -35,7 +36,11 @@ export class FormsComponent implements OnInit  {
     this.dataModelObj.glasstype= this.addDetails.value.glasstype;
     this.dataModelObj.section=this.addDetails.value.section;
     this.dataModelObj.flaming=this.addDetails.value.flaming;
-    this.api.addData(this.dataModelObj).subscribe((res:any)=>{})
+    this.api.addData(this.dataModelObj).subscribe((res:any)=>{
+       const data = []
+       data.push(res)
+       this.DataTransfer.emit(data[0])
+    })
   }
   onedit(){
     this.dataModelObj.id = this.Data.id;
