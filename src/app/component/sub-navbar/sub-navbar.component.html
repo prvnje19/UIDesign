@@ -1,5 +1,20 @@
 <div class="container-fluid sub-navbar text-center">
-    <div class="row"*ngIf="compName === 'table'">
+  <div class="row" *ngIf="compName !== 'table'">
+    <!-- <div class="col-lg-1"> -->
+     
+      <!-- </div> -->
+      <div class="col-lg-4 d-flex justify-content-left aling-items-center ">
+        <span> <button class="btn d-flex justify-content-center  pb-4" (click)="handleBack()">
+          <i class="fa fa-arrow-left arrowIcon mt-2" aria-hidden="true"></i>
+         </button>
+        </span> <p class="mt-2 mr-4 pt-1 text-light header">
+          {{headerName}}
+        </p>
+        <span class="ml-4 mt-2 pt-1 count">1 of 3</span>
+    </div>
+   
+  </div>
+    <div class="row" *ngIf="compName === 'table'">
       <div class="col-lg-6 col-sm-6 col-xs-2 col-md-6 ">
         <div class="content pt-2 ">
         Charts</div>

@@ -18,3 +18,16 @@
 .dashed{
     border-bottom: 2px solid white;
 }
+.arrowIcon{
+    color: white;
+    font-weight: 300 !important;
+}
+.header{
+    font-weight: 600;
+    margin-right: 26px !important;
+    
+}
+.count{
+    color: rgba(255, 255, 255, 0.815) !important;
+    font-weight: 600;
+}
