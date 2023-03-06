@@ -49,6 +49,7 @@ font-weight: bold;
 }
 .active-link{
     margin-right: 20px;
+    cursor: pointer;
 }
 .borderBottom{
     border-bottom: 2px solid black;
