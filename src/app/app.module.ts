@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 // import { TableComponent } from './component/table/table.component';
@@ -23,11 +25,15 @@ import { CreateneworderComponent } from './pages/createneworder/createneworder.c
     ConfigureDoorComponent,
     FormsComponent,
     PlaceOrderComponent,
-    CreateneworderComponent
+    CreateneworderComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
