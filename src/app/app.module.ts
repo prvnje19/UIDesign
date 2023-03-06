@@ -8,12 +8,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 // import { TableComponent } from './component/table/table.component';
 import { SubNavbarComponent } from './component/sub-navbar/sub-navbar.component';
 import { ConfigureDoorComponent } from './pages/configure-door/configure-door.component';
-<<<<<<< HEAD
 import { FormsComponent } from './pages/forms/forms.component';
-=======
 import { PlaceOrderComponent } from './pages/place-order/place-order.component';
 import { TableComponent } from './component/table/table.component';
->>>>>>> 3bc5ae0fa71115bf7584a48f3358da390107e8c0
 
 @NgModule({
   declarations: [
@@ -23,11 +20,8 @@ import { TableComponent } from './component/table/table.component';
     TableComponent,
     SubNavbarComponent,
     ConfigureDoorComponent,
-<<<<<<< HEAD
-    FormsComponent
-=======
+    FormsComponent,
     PlaceOrderComponent
->>>>>>> 3bc5ae0fa71115bf7584a48f3358da390107e8c0
   ],
   imports: [
     BrowserModule,

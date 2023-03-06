@@ -1,14 +1,8 @@
 
 <div class="cont">
   <div class="navs">
-<<<<<<< HEAD
-    <app-navbar></app-navbar>
-    <app-sub-navbar></app-sub-navbar>
-    <app-forms></app-forms>
-=======
     <app-navbar    *ngIf="compName === 'table'"></app-navbar>
     <app-sub-navbar [compName]="compName"></app-sub-navbar>
->>>>>>> 3bc5ae0fa71115bf7584a48f3358da390107e8c0
   </div>
   <div class="container-fluid" *ngIf="compName !== 'table'" >
     <div class="row">
