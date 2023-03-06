@@ -11,12 +11,17 @@ export class AppComponent implements  OnInit  {
   routeName:any;
   compName = "table"
   SubCompName="createneworder"
-  Data:any
+  Data:any;
+  addedData:any;
   btnlabel!:string;
   constructor(){ }
   ngOnInit(): void {
       console.log(this.Data , "data render");
       
+  }
+  added(data:any){
+    console.log(data , "app");
+    this.addedData = data
   }
   transferData(data:any){
     console.log(data , "app");

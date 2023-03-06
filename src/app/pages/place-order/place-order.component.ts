@@ -10,6 +10,8 @@ export class PlaceOrderComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter<any>();
   @Output() buttonlable = new EventEmitter<any>();
   @Input() Data:any;
+  @Input() addedData:any;
+  
 
   Datas: any;
   prodId:any
@@ -17,10 +19,8 @@ export class PlaceOrderComponent implements OnInit {
   constructor(private api:ServiceService){}
   ngOnInit(): void {
     this.getDetails();
-
-    this.Datas.map((res:any)=>{
-      this.prodId = res.id
-    })
+    console.log(this.addedData , "addedDataaddedData");
+    
   }
 
   getDetails(){
