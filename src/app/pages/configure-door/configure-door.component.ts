@@ -12,8 +12,6 @@ export class ConfigureDoorComponent {
 
   handleClick(){
     this.newItemEvent.emit('forms')
-    console.log("click");
-    
   }
 
 }

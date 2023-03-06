@@ -2,7 +2,7 @@
 <div class="cont">
   <div class="navs">
     <app-navbar    *ngIf="compName === 'table'"></app-navbar>
-    <app-sub-navbar [compName]="compName"></app-sub-navbar>
+    <app-sub-navbar (newItemEvent) = "addBook($event)"   [compName]="compName" ></app-sub-navbar>
   </div>
   <div class="container-fluid" *ngIf="compName !== 'table'" >
     <div class="row">

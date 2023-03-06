@@ -26,6 +26,7 @@ export class FormsComponent implements OnInit  {
       flaming: [''],
     });
     this.onedit();
+    localStorage.setItem('page' , 'forms')
   }
   
 
@@ -34,9 +35,7 @@ export class FormsComponent implements OnInit  {
     this.dataModelObj.glasstype= this.addDetails.value.glasstype;
     this.dataModelObj.section=this.addDetails.value.section;
     this.dataModelObj.flaming=this.addDetails.value.flaming;
-    this.api.addData(this.dataModelObj).subscribe((res:any)=>{
-       console.log(res,'res1')
-    })
+    this.api.addData(this.dataModelObj).subscribe((res:any)=>{})
   }
   onedit(){
     this.dataModelObj.id = this.Data.id;
@@ -45,17 +44,12 @@ export class FormsComponent implements OnInit  {
     this.addDetails.controls["flaming"].setValue(this.Data.flaming)
   }
   handleUpdate(){
-    console.log("update");
     this.dataModelObj.glasstype= this.addDetails.value.glasstype;
   this.dataModelObj.section=this.addDetails.value.section;
   this.dataModelObj.flaming=this.addDetails.value.flaming;
 
 
-  this.api.editData(this.dataModelObj,this.dataModelObj.id).subscribe(res=>{    
-    console.log(res , "resssssss update");
-    
+  this.api.editData(this.dataModelObj,this.dataModelObj.id).subscribe(res=>{
   })
   }
-
-
 }

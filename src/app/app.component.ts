@@ -14,12 +14,9 @@ export class AppComponent implements  OnInit  {
   Data:any
   btnlabel!:string;
   constructor(){ }
-  ngOnInit(): void {
-      console.log(this.Data , "data render");
-      
+  ngOnInit(): void {  
   }
   transferData(data:any){
-    console.log(data , "app");
     this.Data = data
   }
   placeOrderData(pageName: string){
@@ -32,8 +29,6 @@ export class AppComponent implements  OnInit  {
       this.compName = "table"
     }
     if(pageName === "formsEdit"){
-      console.log("formsss");
-      
       this.SubCompName="forms"
     }
     if(pageName === "createneworder"){
@@ -41,8 +36,6 @@ export class AppComponent implements  OnInit  {
     }
   }
   config(pageName:string){
-  
-    
     this.SubCompName =  pageName ;
   }
   buttonlable(label:any){

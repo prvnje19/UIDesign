@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sub-navbar',
@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SubNavbarComponent implements OnInit {
  
   @Input() compName:any;
+  @Output() newItemEvent = new EventEmitter<any>();
+
   headerName!:string;
   ngOnInit(): void {
     this.headerName = "Create a new order"
@@ -15,15 +17,23 @@ export class SubNavbarComponent implements OnInit {
 
 
   handleBack(){
-    console.log("black");
-    // switch (this.pageName) {
-    //   case "":
-      
-    //     break;
-    
-    //   default:
-    //     break;
-    // }
+    switch (this.compName) {
+      case "createneworder":
+        this.newItemEvent.emit('table')
+        break;
+        case "configPage":
+          this.newItemEvent.emit('createneworder')
+          break;
+          case "forms":
+            this.newItemEvent.emit('configPage')
+            break;
+            case "placeOrder":
+              this.newItemEvent.emit('forms')
+              break;
+            
+      default:
+        break;
+    }
     
   }
 
