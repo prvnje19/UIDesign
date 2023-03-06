@@ -14,6 +14,7 @@ import { FormsComponent } from './pages/forms/forms.component';
 import { PlaceOrderComponent } from './pages/place-order/place-order.component';
 import { TableComponent } from './component/table/table.component';
 import { CreateneworderComponent } from './pages/createneworder/createneworder.component';
+// import { CreateneworderComponent } from './pages/createneworder/createneworder.component';
 
 @NgModule({
   declarations: [
